@@ -7,5 +7,5 @@ class Weapon:
 class Armor:
     def __init__(self, name, arm_type, arm_val):
         self.name = name
-        self.arm_type = arm_type  # light, medium, heavy
+        self.arm_type = arm_type  # light, mage, heavy
         self.arm_val = arm_val
