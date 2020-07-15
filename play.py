@@ -4,7 +4,7 @@ from characters import Character
 
 
 def change_equip():
-    # Allow player to change their equipment
+    """Allows player to change their equipment"""
     equip_option = input('\nWhich equipment would you like to change?'
         '\n1. Weapon'
         '\n2. Armor'
@@ -18,24 +18,29 @@ def change_equip():
 
 def battle():
     # Do battle with an enemy
-    # Damage based on each character's weapon damage value and armor value
+    # Damage based on each character's weapon damage value and armor
+    # value
     pass
 
 
 if __name__ == '__main__':
-    # Main menu
-    # EQUIPMENT
-    # FIGHT
-    # EXIT
+    """Main loop.
+    User has the option to change equipment, fight a monster, or exit
+    the program.
+    """
 
-    name_hero = input('Welcome to this basic RPG! Please name your character.  ')
+    name_hero = input('Welcome to this basic RPG! Please name your '
+        'character.  ')
     hero = Character(name_hero)
-    print(f'\nAre you ready for adventure, {hero.name}? How will you proceed?')
+    print(f'\nAre you ready for adventure, {hero.name}? How will you '
+        'proceed?')
 
     prompt =  '\n1. EQUIP - Change your character\'s equipment'
     prompt +=  '\n2. FIGHT - Do battle with an enemy'
     prompt +=  '\n3. EXIT - Exit the program\n\t'
 
+    # Main Menu
+    # Will loop indefinitely until user chooses to EXIT
     menu = True
     while menu == True:
         message = input(prompt)
