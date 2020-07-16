@@ -1,6 +1,7 @@
 import random
 
-from characters import Character
+import battle
+import characters
 
 
 def change_equip():
@@ -10,17 +11,11 @@ def change_equip():
         '\n2. Armor'
         '\n3. None\n\t')
     if equip_option.lower() == 'weapon' or equip_option == '1':
-        hero.equip_weapon()
+        characters.hero.equip_weapon()
     elif equip_option.lower() == 'armor' or equip_option == '2':
-        hero.equip_armor()
+        characters.hero.equip_armor()
     else:
         pass
-
-def battle():
-    # Do battle with an enemy
-    # Damage based on each character's weapon damage value and armor
-    # value
-    pass
 
 
 if __name__ == '__main__':
@@ -29,11 +24,8 @@ if __name__ == '__main__':
     the program.
     """
 
-    name_hero = input('Welcome to this basic RPG! Please name your '
-        'character.  ')
-    hero = Character(name_hero)
-    print(f'\nAre you ready for adventure, {hero.name}? How will you '
-        'proceed?')
+    print(f'\nAre you ready for adventure, {characters.hero.name}? '
+        'How will you proceed?')
 
     prompt =  '\n1. EQUIP - Change your character\'s equipment'
     prompt +=  '\n2. FIGHT - Do battle with an enemy'
@@ -48,7 +40,7 @@ if __name__ == '__main__':
         if message.upper() == 'EQUIP' or message == '1':
             change_equip()
         elif message.upper() == 'FIGHT' or message == '2':
-            pass
+            battle.battle()
         elif message.upper() == 'EXIT' or message == '3':
             print('Thank you for playing. Good bye!\n')
             menu = False

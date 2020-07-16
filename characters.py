@@ -1,5 +1,6 @@
 import csv
 
+
 class Character:
     def __init__(self, name):
         """Initializes Character object and sets basic stats."""
@@ -53,3 +54,9 @@ class Character:
 
             if not match:
                 print(f'Sorry, there is no {arm_type} armor. Please try again.')
+
+
+# Initialize the player character at the start of the script
+name_hero = input('Welcome to this basic RPG! Please name your '
+    'character.  ')
+hero = Character(name_hero)
