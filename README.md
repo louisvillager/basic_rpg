@@ -1,6 +1,6 @@
 # Basic RPG
 
-**A CodeLouisville Project**
+**A CodeLouisville Project**  
 A simple command line role-playing game
 
 ### Installation and Running
