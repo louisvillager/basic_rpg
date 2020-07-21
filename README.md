@@ -5,8 +5,9 @@ A simple command line role-playing game
 
 ### Installation and Running
 - This project was developed in Python 3.8
+    - Be sure that Python 3.8 is installed and can run in the same directory as the cloned files.
 - This project does not use any external libraries.
-- Run `python3 play.py`
+- Run `python3 play.py` in a Powershell terminal
 
 ### Source Overview
 This project consists of one class:
